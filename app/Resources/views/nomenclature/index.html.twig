@@ -1,0 +1,40 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>La listes des nomenclatures</h1>
+
+    <table  id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Nom_fr</th>
+                <th>Nom_en</th>
+                <th>Lien_parcours</th>
+                <th>Couleur</th>
+                <th>Horaires</th>
+                <th>Date_modif</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for nomenclature in nomenclatures %}
+            <tr>
+                <td>{{ nomenclature.nom }}</td>
+                <td>{{ nomenclature.nomfr }}</td>
+                <td>{{ nomenclature.nomen }}</td>
+                <td>{{ nomenclature.lienparcours }}</td>
+                <td>{{ nomenclature.couleur }}</td>
+                <td>{{ nomenclature.horaires }}</td>
+                <td>{% if nomenclature.datemodif %}{{ nomenclature.datemodif|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <!--<td>
+                    <a href="{#{ path('nomenclature_edit', { 'id': nomenclature.id }) }#}">Modifier</a>
+                </td>-->
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+   <!-- <ul>
+        <li>
+            <a href="{#{ path('nomenclature_new') }#}">Ajouter une nomenclature</a>
+        </li>
+    </ul>-->
+{% endblock %}

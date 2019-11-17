@@ -1,0 +1,9 @@
+slot_mandrill:
+    api_key: 881hmbmVFHx7aiiDGeNksg
+    disable_delivery: false # useful for dev/test environment. Default value is 'false'
+    # debug: passed to \Mandrill causing it to output curl requests. Useful to see output
+    # from CLI script. Default value is 'false'
+    debug: true
+    default:
+        sender: rouedelafortune@napsy.net
+        sender_name: bliwe # Optionally define a sender name (from name)

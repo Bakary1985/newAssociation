@@ -1,0 +1,95 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Produit</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ produit.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_fr</th>
+                <td>{{ produit.nomfr }}</td>
+            </tr>
+            <tr>
+                <th>Nom_en</th>
+                <td>{{ produit.nomen }}</td>
+            </tr>
+            <tr>
+                <th>Univers_technologique</th>
+                <td>{{ produit.universtechnologique }}</td>
+            </tr>
+            <tr>
+                <th>Marche</th>
+                <td>{{ produit.marche }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ produit.prix }}</td>
+            </tr>
+            <tr>
+                <th>Description_fr</th>
+                <td>{{ produit.descriptionfr }}</td>
+            </tr>
+            <tr>
+                <th>Description_en</th>
+                <td>{{ produit.descriptionen }}</td>
+            </tr>
+            <tr>
+                <th>Service_rendu_fr</th>
+                <td>{{ produit.servicerendufr }}</td>
+            </tr>
+            <tr>
+                <th>Service_rendu_en</th>
+                <td>{{ produit.servicerenduen }}</td>
+            </tr>
+            <tr>
+                <th>Img</th>
+                <td>{{ produit.img }}</td>
+            </tr>
+            <tr>
+                <th>Qcode</th>
+                <td>{{ produit.qcode }}</td>
+            </tr>
+            <tr>
+                <th>Pdf</th>
+                <td>{{ produit.pdf }}</td>
+            </tr>
+            <tr>
+                <th>Avant</th>
+                <td>{{ produit.avant }}</td>
+            </tr>
+            <tr>
+                <th>Theme</th>
+                <td>{{ produit.theme }}</td>
+            </tr>
+            <tr>
+                <th>Nominer</th>
+                <td>{{ produit.nominer }}</td>
+            </tr>
+            <tr>
+                <th>Lien_produit_fr</th>
+                <td>{{ produit.lienproduitfr }}</td>
+            </tr>
+            <tr>
+                <th>Lien_produit_en</th>
+                <td>{{ produit.lienproduiten }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('produit_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('produit_edit', { 'id': produit.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,39 @@
+<div class="modal fade" id="myModalMap" role="dialog">
+    <button type="button" class="close" data-dismiss="modal">
+        <img class="mapimgclose" src="{{ asset('images/grille/themes/bt_retour.gif' ) }}">
+    </button>
+    <div class="modal-dialog">
+    </div>
+    <div class="container body_maps"  style=" display: none;">
+        <div id="myCarousel" class="carousel slide" >
+            <a class="bt_gch" href="#myCarousel" role="button" data-slide="prev">
+                <img src="{{ asset('images/grille/plans/bt_gch.png' ) }}"/>
+            </a>
+            <a class="bt_drts" href="#myCarousel" role="button" data-slide="next">
+                <img src="{{ asset('images/grille/plans/bt_drt.png' ) }}"/>
+            </a>
+            <div class="carousel-inner">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+        // Activate Carousel
+        $("#myCarousel").carousel("pause");
+
+        // Enable Carousel Indicators
+        $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+        });
+        $(".item2").click(function(){
+            $("#myCarousel").carousel(1);
+        });
+        $(".item3").click(function(){
+            $("#myCarousel").carousel(2);
+        });
+
+</script>

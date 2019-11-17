@@ -1,0 +1,702 @@
+@import url("fonts.css");
+body{
+    font-family: 'Avenir Next LT Pro Bold';
+    font-size: 18px;
+}
+/*SCROOL BAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+.card {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0 10px;
+}
+.ficheProduit .card {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0 10px;
+    -webkit-box-shadow: -1px 0px 0px 5px rgba(194,190,194,0.34);
+    -moz-box-shadow: -1px 0px 0px 5px rgba(194,190,194,0.34);
+    box-shadow: -1px 0px 0px 5px rgba(194,190,194,0.34);
+}
+.card-header{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.block_top{
+    padding-top: 304px;
+    margin-bottom: 140px;
+}
+.top_batimat .block_top{
+    padding-top: 304px;
+    margin-bottom: 140px;
+}
+.top_ideobain .block_top{
+    padding-top: 304px;
+    margin-bottom: 160px;
+}
+
+.ficheProduit .card-body {
+padding: 0;
+}
+
+
+.ideo_menu >.col-md-12>.card>.card-body>.row>.col-md-3:first-child{
+    margin-left: 124px;
+}
+
+.voteItem{
+
+}
+.titreFrancais{
+    padding: 0px 5px;
+}
+.batima_body .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+    text-align: center;
+    height: 53px;
+}
+.card-header p{
+    margin-top: 0px;
+     line-height: 17px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.voteItem .card-footer {
+    background-color: transparent;
+    border-top:0px;
+    padding-left: 7px;
+}
+.voteItem .card-body {
+    height: 170px;
+    padding-top: 0;
+}
+.batima_body{
+    margin-top: 150px;
+}
+.ficheProduit .batima_body{
+    margin-top: 15px;
+    /*height: 1150px;*/
+   /* overflow: scroll;*/
+}
+.batima_body .card{
+    background: #ffffff;
+}
+.batimat.container-fluid{
+    padding: 0 23px;
+}
+.batimat .card-deck{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.batimat .card-deck .card{
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.nom_batimat,.nom_interclima, .nom_ideobain{
+    height: 51px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+.batimat .card-body{
+    padding: 29px;
+    padding-top: 20px;
+    padding-left: 7px;
+}
+.ideobain .card-body{
+    padding: 29px;
+    padding-top: 20px;
+    padding-left: 7px;
+}
+.interclima .card-body{
+    padding: 29px;
+    padding-top: 20px;
+    padding-left: 7px;
+}
+.ficheProduit .card-body {
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.ficheProduit .block_top {
+    padding-top: 234px;
+    margin-bottom:0px;
+}
+
+.nomine{
+    margin-top: -23px;
+    text-align: center;
+}
+.card-body .rendufr{
+    font-family: 'Avenir Next LT Pro Cond';
+    font-size: 15px;
+    line-height: 17px;
+    color: #546367;
+    text-align: center;
+    margin-top: 9px;
+    padding: 0 5px;
+}
+.card-body .renduen{
+    font-family: 'Avenir Next LT Pro Cond italic';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #546367;
+    padding: 0 5px;
+}
+
+.fichecalendar .topReturn,.fichemap .topReturn{
+    margin-left: 724px;
+}
+.zoom_produit{
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 46px;
+}
+.nomFr{
+    text-transform: uppercase;
+    line-height: 16px;
+    padding: 8px 5px;
+}
+.nomFr >p{
+    margin-bottom: 0px;
+}
+.nom_1{
+    background-color:#cba402;
+}
+.nom_2{
+    background-color:#da5913;
+}
+.nom_3{
+    background-color:#d02423;
+}
+.nom_4{
+    background-color:#8a1532;
+}
+.nom_5{
+    background-color:#d20269;
+}
+.nom_6{
+    background-color:#59215e;
+}
+.nom_7{
+    background-color:#262959;
+}
+.nom_8{
+    background-color:#2a4c4b;
+}
+.nom_9{
+    background-color:#4ebcc2;
+}
+.nom_10{
+    background-color:#016a8f;
+}
+.nom_11{
+    background-color:#016664;
+}
+.nom_12{
+    background-color:#527fc0;
+}
+.nom_13{
+    background-color:#5e539f;
+}
+.nom_14{
+    background-color:#9b7bb7;
+}.nom_15{
+     background-color:#ef7a57;
+ }
+.nom_16{
+    background-color:#a8a518;
+}
+.nom_17{
+    background-color:#16a95c;
+}
+.nom_18{
+    background-color:#2a4c4b;
+}
+/**
+*titre des blocks
+ */
+.titre_1,.titresss_1{
+    color:#cba402;
+}
+.titre_2,.titresss_2{
+    color:#da5913;
+}
+.titre_3,.titresss_3{
+    color:#d02423;
+}
+.titre_4,.titresss_4{
+    color:#8a1532;
+}
+.titre_5,.titresss_5{
+    color:#d20269;
+}
+.titre_6,.titresss_6{
+     color:#59215e;
+ }
+.titre_7,.titresss_7{
+    color:#262959;
+}
+.titre_8,.titresss_8{
+    color:#2a4c4b;
+}
+.titre_9,.titresss_9{
+    color:#4ebcc2;
+}
+.titre_10,.titresss_10{
+    color:#016a8f;
+}
+.titre_11,.titresss_11{
+    color:#016664;
+}
+.titre_12,.titresss_12{
+    color:#527fc0;
+}
+.titre_13,.titresss_13{
+    color:#5e539f;
+}
+.titre_14,.titresss_14{
+    color:#9b7bb7;
+}
+.titre_15,.titresss_15{
+    color:#ef7a57;
+}
+.titre_16,.titresss_16{
+    color:#a8a518;
+}
+.titre_17,.titresss_17{
+    color:#16a95c;
+}
+.titre_18,.titresss_18{
+    color:#2a4c4b;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 1020px;
+        margin: 1.75rem auto;
+    }
+    .modal-content{
+        height: 1253px;
+        margin-top: -476px;
+        background-color: transparent;
+        border: 0;
+
+    }
+}
+.modal-content .entete_modal{
+    height: 300px;
+}
+.modal-open #myModal {
+    background: url("../images/grille/modal/fiche-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+.desc_fr_en{
+    height: 615px;
+    overflow-y: auto;
+    width: 598px;
+    padding-left: 25px;
+}
+.modal-body .nom{
+    font-size: 40px;
+}
+.modal-body .rendufr{
+    font-family: 'Avenir Next LT Pro Cond';
+    font-size: 28px;
+    color: #546367;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+.modal-body .renduen{
+    font-family: 'Avenir Next LT Pro Cond italic';
+    font-size: 28px;
+    color: #546367;
+    line-height: 30px;
+}
+.modal-body .image_loral{
+    margin-top: 17px;
+    margin-left: -13px;
+}
+.modal-body .produit_img{
+    padding: 25px;
+}
+.fichedroit{
+    background-color: #dddfe0;
+    margin-top: 25px;
+    height: 630px;
+    position: static;
+}
+.titre_produits{
+    font-size: 30px;
+    padding-top: 10px;
+}
+@media (min-width: 768px){
+    .modal-content .col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 64.666667%;
+    }
+}
+
+.produit_descfr{
+    font-size: 17px;
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Cond';
+    text-align: justify;
+    border-bottom: 4px solid #ccc;
+}
+.produit_descen{
+    font-size: 17px;
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Cond italic';
+    text-align: justify;
+}
+.modal-body .stand_position{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #546367;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.modal-body .contact_contact{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #546367;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.modal-body .stand{
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Regular';
+    font-size: 20px;
+}
+.nom_prenom_contact,.tel_contact,.email_contact{
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Regular';
+    font-size: 16px;
+    margin: 0;
+}
+.email_contact{
+    margin-bottom: 70px;
+}
+.modal-header{
+    border: 0;
+}
+.modal-header .close {
+    background: url("../images/grille/modal/bt_close.png") no-repeat center top;
+    background-size: contain;
+    margin: 0 auto;
+    height: 57px;
+    width: 57px;
+    margin-top: -40px;
+}
+.modal-body .menu_document{
+    padding-left: 0px;
+}
+.modalTitreProduit{
+    font-size: 50px;
+    line-height: 45px;
+}
+.close{
+    opacity: 1;
+}
+.infofiche{
+    text-align: center;
+    margin-top: 33px;
+    line-height: 38px;
+}
+.infofiche p{
+    margin-bottom: 0px;
+    color: #546367;
+    font-size: 35px;
+}
+#en{
+    font-family: 'Avenir Next LT Pro Italic';
+}
+#ficheLien .form-group {
+    margin: 62px 42px;
+}
+.infosPatrique{
+    margin: 0px 42px;
+    color: #546367;
+    width: 570px;
+    font-family: 'Avenir Next LT Pro Cond';
+}
+#ficheLien label {
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Cond';
+}
+#ficheLien .ok{
+    margin-left: 306px;
+    margin-top: 20px;
+    display: block;
+}
+#ficheLien .back{
+    margin-left: 306px;
+    margin-top: 50px;
+}
+#ficheLien .en_vote{
+    font-family: 'Avenir Next LT Pro Italic';
+    font-size: 34px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#ficheLien .infos_vote{
+    font-size: 21px;
+    line-height: 16px;
+}
+#ficheLien .infos_vote:first-child{
+    margin-top: 30px;
+}
+#ficheLien .infos_vote:last-child{
+    margin-bottom: 12px;
+}
+#ficheLien .infos_en_vote{
+    font-family: 'Avenir Next LT Pro Italic';
+    font-size: 18px;
+}
+#label_en{
+    color: #546367;
+    font-family: 'Avenir Next LT Pro Cond';
+    font-size: 18px;
+}
+.batima_body .ok{
+    display: none;
+}
+#program-modal .ok{
+    display: block;
+}
+.merci{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+}
+.merci .m2{
+    font-family: 'Avenir Next LT Pro Italic';
+}
+.merci .m1{
+    color: #546367;
+    margin-bottom: 0px;
+}
+.text-danger {
+    position: absolute;
+}
+.topProgress{
+}
+.body_top5{
+    height: 1240px;
+    /*margin-left: 60px;*/
+    padding-right: 0;
+    padding-left: 0;
+}
+.topbatimat{
+    /*margin-top: 18px;*/
+}
+ .topbatimat  .bg-success_salon{
+    background-color: #e30613;
+}
+ .productResult{
+     /*padding-bottom: 14px;*/
+ }
+.top_batimat .productResult .titre {
+    font-size: 25px;
+    color: #e30613;
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+}
+.top_ideobain .productResult .titre {
+    font-size: 25px;
+    color: #008fba;
+    padding: 0;
+    margin: 0;
+}
+.top_interclima .productResult .titre {
+    font-size: 25px;
+    color: #823f8d;
+    padding: 0;
+    margin: 0;
+}
+
+ .topideobain  .bg-success_salon{
+    background-color: #008fba;
+}
+ .topinterclima  .bg-success_salon{
+    background-color: #823f8d;
+}
+
+.top_batimat .block_top {
+    padding-top: 303px;
+}
+.top_ideobain .block_top {
+    padding-top: 303px;
+}
+.top_interclima .block_top {
+    padding-top: 303px;
+    margin-bottom: 157px;
+}
+.top_batimat .cal0{
+    margin-bottom: 97px;
+}
+.top_batimat .cal1{
+    margin-bottom: 127px;
+}
+
+.top_batimat .cal2{
+    margin-bottom: 128px;
+}
+.top_batimat .cal3{
+    margin-bottom: 130px;
+}
+.top_batimat .cal4{
+}
+
+.top_ideobain .cal0{
+    margin-bottom: 128px;
+}
+.top_ideobain .cal1{
+    margin-bottom: 93px;
+}
+.top_ideobain .cal2{
+    margin-bottom: 128px;
+}
+.top_ideobain .cal3{
+    margin-bottom: 130px;
+}
+.top_ideobain .cal4{
+}
+
+.top_interclima .cal0{
+    margin-bottom: 127px;
+}
+.top_interclima .cal1{
+    margin-bottom: 127px;
+}
+.top_interclima .cal2{
+    margin-bottom: 128px;
+}
+.top_interclima .cal3{
+    margin-bottom: 130px;
+}
+.top_interclima .cal4{
+}
+@media (min-width: 768px){
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 8.666667%;
+    }
+}
+.topProgress {
+    border-bottom: 1px solid #cccc;
+}
+.body_caroussel{
+    padding-right: 0;
+    padding-left: 0;
+}
+.body_maps{
+    margin: 0;
+    padding: 0;
+    margin-left: -16px;
+}
+.bt_drts{
+    position: absolute;
+    margin-left: 980px;
+    margin-top: 354px;
+    z-index: 200;
+}
+.bt_gch{
+    position: absolute;
+    margin-left: 44px;
+    margin-top: 354px;
+    z-index: 200;
+}
+#carouselExampleControls{
+    width: 1080px;
+    margin-left: -15px;
+    padding: 0;
+}
+.simple-keyboard {
+    position: absolute;
+    background: #333;
+     left: 59px;
+    width: 536px;
+    display: none;
+    margin-top: -300px;
+}
+.kyebord-email{
+    position: absolute;
+    background: #333;
+    left: 59px;
+    width: 799px;
+    display: none;
+    marm1gin-top: -330px;
+}
+#videoPlayer{
+    position: absolute;
+    z-index: 2000;
+    margin-left: -24px;
+}
+#videoPlayer{
+    display: none;
+}
+.carousel-inner {
+    position: relative;
+    width: 1080px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+#vote .p1{
+    line-height: 30px;
+}
+
+.resultat{
+    width: 3840px;
+    height: 1080px;
+}
+#resultatTop5 .topProgress {
+    margin: 30px 0px;
+}
+#resultatTop5 .bg-success_salon {
+    background-color: #e30613;
+}
+
+#resultatTop5 .productResult .titre {
+    font-size: 40px;
+    color: #e30613;
+    padding: 0;
+    margin: 0;
+    line-height: 38px;
+}
+.myCarousel .carousel-inner{
+    margin-left: -15px;
+    width: 3840px;
+    height: 1080px;
+}
+.myCarousel .innovation{
+    font-size: 27px;
+}
+#myModalCal img{
+    margin-top: 234px;
+}
+#myModalMap .mapimgclose{
+    margin-top: 234px;
+}

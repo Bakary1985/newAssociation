@@ -1,0 +1,30 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block titre %}{% endblock %}
+{% block sousTitre %}Authentification{% endblock %}
+ {% block body %}
+  <form method="post" action="{{ path('security') }}">
+   <div class="form-group">
+    <div class="row">
+     <div class="col-sm-4">
+     </div>
+     <div class="col-sm-4">
+      <input type="text" id="identifiant" name="identifiant" required="required" placeholder="Identifiant" class="form-control">
+      <input type="password" id="password" name="password" required="required" placeholder="password" class="form-control">
+     </div>
+     <div class="col-sm-4">
+     </div>
+    </div>
+   </div>
+   <div class="row" style="text-align: center">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+     <button type="submit" class="alert-primary">Valider</button>
+    </div>
+
+    <div class="col-sm-4">
+    </div>
+   </div>
+  </form>
+
+ {% endblock %}

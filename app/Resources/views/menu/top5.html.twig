@@ -1,0 +1,24 @@
+
+<div class="container body_top5"  style=" display: none;">
+{% set count =0 %}
+    {% for voteProduc in voteProductList %}
+
+    <div class="row  topProgress cal{{ count }}">
+        <div class="col-md-2 num_{{ count }}"> </div>
+        <div class="col-md-5 top{{ screen }}">
+            <div class="progress" style="height: 50px">
+                <div class="progress-bar progress-bar-striped bg-success_salon" role="progressbar"
+                     aria-valuenow="{{ voteProduc.percent_vote }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ voteProduc.percent_vote~'%' }}"></div>
+            </div>
+        </div>
+        <div class="col-md-3 productResult">
+            <p class="titre">{{voteProduc.nom_fr  }}</p>
+            <p class="innovation">{{ voteProduc.innovation }}</p>
+        </div>
+        <div class="col-md-2">
+            <img style="padding-bottom: 10px" height="84" src="{{ asset('images/produits/'~voteProduc.img_produit~'.jpg' ) }}"/>
+        </div>
+    </div>
+        {% set count = count + 1 %}
+    {% endfor %}
+</div>

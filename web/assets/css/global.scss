@@ -1,0 +1,12 @@
+
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+.main-header > .navbar {
+    background-color: #205081;
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 0;
+    min-height: 40px;
+}
+

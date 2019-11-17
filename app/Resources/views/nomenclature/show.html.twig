@@ -1,0 +1,55 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Nomenclature</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ nomenclature.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ nomenclature.nom }}</td>
+            </tr>
+            <tr>
+                <th>Nom_fr</th>
+                <td>{{ nomenclature.nomfr }}</td>
+            </tr>
+            <tr>
+                <th>Nom_en</th>
+                <td>{{ nomenclature.nomen }}</td>
+            </tr>
+            <tr>
+                <th>Lien_parcours</th>
+                <td>{{ nomenclature.lienparcours }}</td>
+            </tr>
+            <tr>
+                <th>Couleur</th>
+                <td>{{ nomenclature.couleur }}</td>
+            </tr>
+            <tr>
+                <th>Horaires</th>
+                <td>{{ nomenclature.horaires }}</td>
+            </tr>
+            <tr>
+                <th>Date_modif</th>
+                <td>{% if nomenclature.datemodif %}{{ nomenclature.datemodif|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('nomenclature_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('nomenclature_edit', { 'id': nomenclature.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

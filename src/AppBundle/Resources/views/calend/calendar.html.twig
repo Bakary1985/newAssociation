@@ -1,0 +1,275 @@
+{% extends "::conference.html.twig" %}
+
+{% block title %}
+    Calendar
+{% endblock %}
+
+{% block body %}
+
+    <div class="Day_menu">
+        <div class="day-tab" style="    margin-top: 73px;margin-left: 60px;">
+            <div class=""><a href="{{ path('calendar',{'day':16}) }}"><img
+                            src="{{ asset('images/'~active15~'.png') }}"/></a></div>
+            <div class=""><a href="{{ path('calendar',{'day':17}) }}"><img
+                            src="{{ asset('images/'~active16~'.png') }}"/></a></div>
+            <div class=""><a href="{{ path('calendar',{'day':18}) }}"><img
+                            src="{{ asset('images/'~active17~'.png') }}"/></a></div>
+        </div>
+        <!--<div style="margin-left: 240px;font-size: 30px;position: absolute;margin-top: -48px;" onclick="refreshPage()" class="filters">reset</div>-->
+    </div>
+
+
+    <div class="container">
+        <div style="    font-size: 15px;width: 14%;margin-left: 404px;margin-top: -165px;">
+
+            <p class="setFilter_menu" onclick="setFilter('typeClass1')">TALK </p>
+            <p class="setFilter_menu" style="margin-top: 16px;" onclick="setFilter('typeClass2')"> Pitch </p>
+
+
+        </div>
+        <div style="font-size: 15px;width: 30%;margin-left: 664px;margin-top:-88px;">
+            <p class="setFilter_menu" style="margin-top: 13px;" onclick="setFilter('typeClass3')"> Tech show </p>
+            <p class="setFilter_menu" style="margin-top: 15px;" onclick="setFilter('typeClass4')"> WORKSHOP</p>
+        </div>
+    </div>
+    <div>
+        <div class=" panel-parent " style="display: table;width: 100%;margin-left: 70px;margin-top: 26px;">
+
+            <div class=" panel-parent " style="    margin-top: -8px;
+    display: table-cell;
+    width: 20%;">
+                <div class="panel-heading" role="tab" id="partner">
+                    <h4 class="setFilter_menu" class="panel-title" style="margin-top: -8px;margin-right: 169px;">
+                        LOCATIONS</h4>
+                </div>
+            </div>
+
+            <div class=" panel-parent " style="    margin-top: -8px;
+    display: table-cell;
+    width: 30%;">
+                <div class="panel-heading" role="tab" id="keywords">
+                    <h4 class="setFilter_menu" class="panel-title" style="margin-top: 6px;">KEYWORDS /
+                        INTERESTS</h4>
+                </div>
+            </div>
+            <div onclick="refreshPageNew()" class=" panel-parent "
+                 style="    margin-top: -8px;display: table-cell;width: 32%;text-align: center;">
+                <img src="{{ asset('/images/bt_reset.png') }}" style="width: 194px;margin-left: 16px;">
+            </div>
+            <div class="panel-collapse filter_col" id="col-moods" role="tabpanel"
+                 aria-labelledby="tog-moods" style="display:none">
+                <div class="panel-body" style="width: 1035px;margin-left: -1018px;">
+                    <ol id="locations" style="display:none">
+
+                        {% set location_list_filter= '' %}
+
+
+                        {% for location in location_list %}
+                            {% set location_list_filter= location | lower %}
+                            <button onclick="setFilterElement('{{ location_list_filter | replace (' ', '-') }}')"
+                                    type="button" class="control corner partenairs ">
+                                 {{ location }} </button>
+
+                        {% endfor %}
+                    </ol>
+                    <ol id="keyword">
+                        {% set keyword_list_filter= '' %}
+                        {% for keyword in keywords %}
+                            {% set keyword_list_filter= keyword.getVchLibelle %}
+
+                            <button onclick="setFilterElement('{{ keyword.getVchLibelle|  replace({' ': '', 'é': 'e', '&':''}) }} ')"
+                                    type="button" class="">
+                                # {{ keyword.getVchLibelle }} </button>
+
+                        {% endfor %}
+                    </ol>
+                </div>
+
+            </div>
+
+            <br style="clear: both;"/>
+        </div>
+
+    </div>
+
+    <div class="container boxs">
+        {% if tableau1 != null %}
+            <div id="dialogContent">
+                <div class="titleContent-close" id="titleContent-close">
+                    <img style="height: 45px;position: absolute;margin-left: 485px;margin-top: -20px;"
+                         src="./images/bt_close.png"/></div>
+                <div id="bodyContent" class="bodyContent" style="min-height: 330px;">
+
+                </div>
+            </div>
+            {% set test = 0 %}
+
+            {% for event in events %}
+
+                {% set test = test + 1 %}
+
+                {% set start_time = event.dateDebut %}
+                {% set end_time  = event.dateFin %}
+                {% set start_event_time = '' %}
+                {% set end_event_time = '' %}
+                {% set start_event_time = start_time.timestamp %}
+                {% set end_event_time = end_time.timestamp %}
+
+
+                {% set class_box= '' %}
+                {% set sal= '' %}
+                {% set Low= '' %}
+                {% set Libelle= '' %}
+                {% set sal = event.idSalle.vchLibelle|replace({' ': '-'})  %}
+                {% set Low = sal|lower  %}
+
+                {% set Libelle = Low|replace({'---': '-'})  %}
+                {% set location_salle= event.idSalle.vchPavillon | replace(' ','-') %}
+
+                {% if event.getIdConferencetype.iId %}
+                    {% set class_box = type_list[event.getIdConferencetype.vchLibelle] %}
+                {% endif %}
+
+                {% for thematique in event.thematique %}
+                    {#% set class_box = class_box~' '~thematique.vchLibelle| replace(' ','-') %#}
+
+                    {% if event.getId_salle is defined %}
+                        {% set class_box = class_box~thematique.getId_salle.getVchLibelle %}
+
+                    {% endif %}
+                {% endfor %}
+                {% set thematique_list_filter= '' %}
+                {% for type in event.getThematique %}
+                    {% set thematique_list_filter= type.getVchLibelle|  replace({' ': '', 'é': 'e'}) %}
+                {% endfor %}
+
+                <div class=" blockAjax {{ thematique_list_filter |  replace({'&':''}) }} mix {{class_box}} {{Libelle|slice(0,-4)}} {{ location_salle|lower }} "
+                     data-timestemp_end="{{ end_event_time }}"
+                     data-timestemp_start="{{ start_event_time }}" data-class="  {{ class_box }}" id="Content_{{ test }} ">
+
+                    <div class="date_conf">
+                        {{ start_time|date("H:i -") }}{{ end_time|date("H:i") }}
+                    </div>
+                    <div class="date_conf_test_{{ test }} ">
+
+                    </div>
+                    <div id="BoxContent_{{ test }} BoxContent" class="BoxContent BoxContent_{{ test }}"
+                         style="min-height: 157px;">
+
+                        {% if  event.idSalle is defined %}
+                            <h1 style="display:none;"> {{ event.idSalle.vchPavillon }}</h1>
+                            <div class="exposant_title_box_{{ test }} exposant_title_box_">
+                                <h2 class="exposant_title_" id="exposant_title_{{ test }}"> {{ event.vchTitre }}</h2>
+                            </div>
+                            <content id="exposant_description_{{ test }}" class="exposant_descriptions exposant_descr">
+                                {{ event.description |  replace({'<p>': '', '</p>': '','<strong>': '', '</strong>': ''}) }}
+                            </content>
+                            <ul id="intervenat_liste">
+                                {% if  event.vchMission != null %}
+                                    <li> Moderator(s): {{ event.vchMission }}</li>
+                                {% endif %}
+                            </ul>
+                            <ul id="intervenat_liste">
+                                {% for intervenat in event.intervenant %}
+                                    <li> Intervenant: {{ intervenat.vchNom ~' ' ~ intervenat.vchPrenom ~' (' ~ intervenat.vchFonction ~')' }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% if thematique_list_filter !=null %}
+                                <span class="exposant_tags_"
+                                      id="exposant_tags_{{ test }}"> #{{ thematique_list_filter }}</span>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="BoxFooter">
+                        <hr/>
+                        <div class="date ">
+                            {% set sal= '' %}
+                            {% set Low= '' %}
+                            {% set Libelle= '' %}
+                            {% set sal = event.idSalle.vchLibelle|replace({' ': '-'})  %}
+                            {% set Low = sal|lower  %}
+
+                            {% set Libelle = Low|replace({'---': '-'})  %}
+
+                            <p class="{{ Libelle|slice(0,-4) }}"> {{ event.idSalle.vchLibelle | replace('-',' ') }}</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            {% endfor %}
+        {% else %}
+            <div id="block_next">
+            <img src="{{ asset('/images/bloc.png') }}">
+            {#% set datenow = '2019-05-16' %#}
+            {% if datenow|date("Y-m-d") == "2019-05-16" %}
+                <div class="para-next">
+                    <h1> NEXT EVENT</h1>
+                    <p> <span>Friday, May 17th, 2019</span><br /><span>9:00</span></p>
+                </div>
+            {% endif %}
+            {% if datenow|date("Y-m-d") == "2019-05-17" %}
+                <div class="para-next">
+                    <h1> NEXT EVENT</h1>
+                    <p> <span>Saturday, May 18th, 2019</span><br /><span>9:00</span></p>
+                </div>
+            {% endif %}
+            {% if datenow|date("Y-m-d") == "2019-05-18" %}
+                <div class="para-next">
+                    <h1> ANNEE PROCHAINE </h1>
+
+                </div>
+            {% endif %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+
+        $.ajax({
+            type: "GET",
+            url: "/api/calendar",
+            data: '',
+            success: function (response) {
+                //elements = document.querySelectorAll('.date_conf');
+                //elements.
+                //document.querySelector(".date_conf").style.backgroundColor = "red";
+                test = 0;
+                t = 0;
+                response.forEach(function(element) {
+                    t= test++
+                    console.log(test)
+                    elements = document.querySelector(".date_conf_test_"+t);
+                    //elements.innerHTML = "Hello JavaScript!";
+                    console.log(elements)
+                    console.log(element.titre)
+
+                        //elements.textContent=element.titre;
+                        //console.log(elements.textContent)
+
+
+
+                });
+
+
+            },
+            fail: function (xhr, status, error) {
+                console.log("Ajax request failed to " + url + "<br>Status: " + xhr.status + " (" + status + "), Error: " + error);
+            }
+        });
+        /**
+         * stage one / stage air
+         * @type {number}
+         */
+        var temps = 10000; // toutes les 10 secondes
+        setInterval(function () {
+            //console.log('Ajax nnnnnnnn = ');
+
+        }, temps);
+
+
+    </script>
+{% endblock %}

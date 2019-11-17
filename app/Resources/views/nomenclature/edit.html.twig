@@ -1,0 +1,19 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Nomenclature edit</h1>
+    {{ form_start(edit_form) }}
+        {{ form_row(edit_form.nom_fr, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.nom_en, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.lien_parcours, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.couleur, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.horaires, { 'attr': {'class': 'form-control'} }) }}
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Modifier" />
+    {{ form_end(edit_form) }}
+
+    <ul>
+        <li>
+            <a  href="{{ path('nomenclature_index') }}">Retour a la liste</a>
+        </li>
+
+    </ul>
+{% endblock %}

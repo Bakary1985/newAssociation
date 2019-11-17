@@ -1,0 +1,36 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Produit modification</h1>
+    <div class="container">
+        {{ form_start(edit_form) }}
+        {{ form_row(edit_form.nom_fr, { 'attr': {'class': 'form-control','readonly':true } }) }}
+        {{ form_row(edit_form.nom_en, { 'attr': {'class': 'form-control','readonly':true} }) }}
+        {{ form_row(edit_form.service_rendu_fr, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.service_rendu_en, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.description_fr, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.description_en, { 'attr': {'class': 'form-control'} }) }}
+        <div>
+            <span>Image:</span>
+            <img height="80" src="{{ asset('images/produits/'~id~'.jpg' ) }}"  />
+        </div>
+
+        {{ form_row(edit_form.theme, { 'attr': {'class': 'form-control','readonly':true} }) }}
+        {{ form_row(edit_form.nominer, { 'attr': {'class': 'form-control','readonly':true} }) }}
+       <p class="lienfr"> <span>Lien en Francais:</span> <a target="_blank" href="http://{{ lien_fr }}">{{ lien_fr }}</a></p>
+        <p class="lienen"><span>Lien en Englais:</span><a target="_blank" href="http://{{ lien_en|replace({'http://': ''}) }}">{{ lien_en }}</a></p>
+
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Modifier"/>
+        {{ form_end(edit_form) }}
+
+        <ul>
+            <li>
+                <a href="{{ path('produit_index') }}">Retour Liste de produits</a>
+            </li>
+            <!-- <li>
+            {#{ form_start(delete_form) }#}
+                <input type="submit" value="Suprimer ">
+            {#{ form_end(delete_form) }#}
+        </li>-->
+        </ul>
+    </div>
+{% endblock %}

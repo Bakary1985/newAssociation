@@ -1,0 +1,51 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Liste des societes</h1>
+
+    <table id="example" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Stand</th>
+                <th>Adresse</th>
+                <th>Rue</th>
+                <th>Code_postal</th>
+                <th>Ville</th>
+                <th>Pays</th>
+                <th>Tel</th>
+                <th>Personne_contact</th>
+                <th>Contact_email</th>
+                <th>Site</th>
+                <th>Description</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        {% for societe in societes %}
+            <tr>
+               <td>{{ societe.nom }}</td>
+                <td>{{ societe.stand }}</td>
+                <td>{{ societe.adresse }}</td>
+                <td>{{ societe.rue }}</td>
+                <td>{{ societe.codepostal }}</td>
+                <td>{{ societe.ville }}</td>
+                <td>{{ societe.pays }}</td>
+                <td>{{ societe.tel }}</td>
+                <td>{{ societe.personnecontact }}</td>
+                <td>{{ societe.contactemail }}</td>
+                <td>{{ societe.site }}</td>
+                <td>{{ societe.description }}</td>
+                <!--<td>
+                    <a href="{#{ path('societe_edit', { 'id': societe.id }) }#}">Modifier</a>
+                </td>-->
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+   <!-- <ul>
+        <li>
+            <a href="{#{ path('societe_new') }#}">Create a new societe</a>
+        </li>
+    </ul>-->
+{% endblock %}

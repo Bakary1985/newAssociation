@@ -1,0 +1,31 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Societe edit</h1>
+
+    {{ form_start(edit_form) }}
+        {{ form_row(edit_form.nom, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.stand, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.adresse, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.rue, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.code_postal, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.ville, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.pays, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.tel, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.personne_contact, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.contact_email, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.site, { 'attr': {'class': 'form-control'} }) }}
+        {{ form_row(edit_form.description, { 'attr': {'class': 'form-control'} }) }}
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Modifier" />
+    {{ form_end(edit_form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('societe_index') }}">Retour a la liste</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,194 @@
+<div class="row mx-lg-n1 batima_body" style="display: none">
+    {% for produit in produits %}
+        <div onclick="showBox('{{ produit.id }}','{{ produit.getNomenclature().id }}')"
+             class="col-md-3 mb-1 py-3 px-lg-1  voteItem voteItem_{{ produit.id }}
+                filtre{{ produit.getNomenclature().id }}" data-backdrop="static" data-toggle="modal" data-target="#myModal"
+             data-productId="{{ produit.id }}">
+            <div class="card">
+                {% if produit.getNominer() == 'Lauréat' %}
+                    <div class="nomine"><img width="97" height="15"
+                                             src="{{ asset('images/grille/logo-laureats.gif' ) }}"/></div>
+                    <div style="display: none" class="modalimg_{{ produit.id }}"><img id="modalimg_{{ produit.id }}"
+                                                                                      src="{{ asset('images/grille/modal/logo_award-laureats.gif' ) }}"/>
+                    </div>
+                {% elseif produit.getNominer() == 'Nominé' %}
+                    <div class="nomine"><img width="97" height="15"
+                                             src="{{ asset('images/grille/logo-nominees.gif' ) }}"/></div>
+                    <div style="display: none" class="modalimg_{{ produit.id }}"><img id="modalimg_{{ produit.id }}"
+                                                                                      src="{{ asset('images/grille/modal/logo_award-nominees.gif' ) }}"/>
+                    </div>
+                {% else %}
+                    <div style="display: none" class="modalimg_{{ produit.id }}"><img id="modalimg_{{ produit.id }}"
+                                                                                      src="{{ asset('images/grille/modal/logo_award.gif' ) }}"/>
+                    </div>
+                {% endif %}
+                <div class="card-header">
+                    <div class="titreFrancaissss">
+                        <p id="titresss_{{ produit.id }}"
+                           class="titresss_{{ produit.getNomenclature().id }}">{{ produit.getIdSociete().nom }}</p>
+                    </div>
+                    <div class="titreFrancais" style="display: none">
+                        <p id="titre_{{ produit.id }}"
+                           class="titre_{{ produit.getNomenclature().id }}">{{ produit.getIdSociete().nom }}</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="nom_{{ screen }} nom_{{ produit.getNomenclature().id }} nomFr">
+                        <p id="nom_{{ produit.id }}">{{ produit.getNomFr() }}</p>
+                    </div>
+                    <p id="rendufr_{{ produit.id }}" class="rendufr">{{ produit.getServiceRenduFr() }}</p>
+                    <p id="renduen_{{ produit.id }}" class="renduen">{{ produit.getServiceRenduEn() }}</p>
+                </div>
+                <div class="card-footer">
+                    <img class="zoom_produit"
+                         src="{{ asset('images/grille/themes/bat'~produit.getNomenclature().id~'-zoom.png' ) }}"/>
+                    <img id="prod_{{ produit.id }}" class="img-responsive" width="222" height="107"
+                         src="{{ asset('images/produits/'~produit.id~'.jpg' ) }}"/>
+                </div>
+                <div style="display: none" id="descriptionFR_{{ produit.id }}">{{ produit.getDescriptionFr()|raw }}</div>
+                <div style="display: none" id="descriptionEN_{{ produit.id }}">{{ produit.getDescriptionEn()|raw }}</div>
+                <p style="display: none" id="nom_contact_{{ produit.id }}">{{ produit.getIdSociete().getPersonneContact() }}</p>
+                <p style="display: none" id="stand_{{ produit.id }}">{{ produit.getIdSociete().getStand() }}</p>
+                <p style="display: none" id="tel_{{ produit.id }}">{{ produit.getIdSociete().getTel() }}</p>
+                <p style="display: none" id="email_{{ produit.id }}">{{ produit.getIdSociete().getContactEmail() }}</p>
+                <p style="display: none" id="sms_{{ produit.id }}">{{ produit.id }}</p>
+                <img style="display: none" class="ok btn_voteFiche_{{ produit.id }}" onclick="onEnvoie('{{ produit.id }}')" src="{{ asset('images/grille/fiches/bt_ok.png' ) }}"/>
+            </div>
+        </div>
+
+
+    {% endfor %}
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button onclick="fermerture();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!--<span aria-hidden="true">&times;</span>-->
+                    </button>
+
+                </div>
+                <div class="modal-body ">
+                    <div class="row">
+                        <div class="col-sm-3 image_produit">
+
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="modalTitreProduit"></div>
+                            <p class="nom"></p>
+                            <p class="rendufr"></p>
+                            <p class="renduen"></p>
+                        </div>
+                    </div>
+                    <div class="row image_loral">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 fichesaisie">
+                            <div class="row description_et_img" >
+                                <div class="produit_img"></div>
+                                <div class="desc_fr_en">
+                                    <p class="produit_descfr"></p>
+                                    <p class="produit_descen"></p>
+                                </div>
+                            </div>
+                            <div style="display: none" class="row" id="ficheLien">
+                                <div style="display: none" class="col-md-12 infofiche" id="fr">
+                                    <p >RECEVEZ LES INFORMATIONS </p>
+                                    <p>SUR CETTE INNOVATION </p>
+                                    <p>PAR EMAIL OU SMS </p>
+                                </div>
+                                <div style="display: none" class="col-md-12 infofiche" id="en">
+                                    <p >RECEIVE THE INFORMATION </p>
+                                    <p>CONCERNING THIS INNOVATION </p>
+                                    <p>BY EMAIL OR SMS  </p>
+                                </div>
+                                <div style="display: none" class="col-md-12 infofiche" id="vote">
+                                    <p class="p1">VOTER POUR </p>
+                                    <p class="p1 p2">CETTE INNOVATION </p>
+                                    <p class="en_vote">VOTE FOR THIS INNOVATION </p>
+                                    <p class="infos_vote">Vous avez le droit de voter </p>
+                                    <p class="infos_vote">pour 1 innovation par jour : choisissez-bien ! </p>
+                                    <p class="infos_en_vote">You have the right to vote for 1 innovation per day: choose carefully! </p>
+                                </div>
+                                <div class="">
+                                    <form>
+                                        <div class="container doc">
+                                            <span class="container" id="messageDoc"></span>
+                                            <div class="form-group email_doc">
+
+
+                                                <label class="fr_label1" for="exampleInputEmail1">INSÉREZ VOTRE EMAIL </label>
+                                                <label class="en_label1" for="exampleInputEmail1">INSERT YOUR EMAIL</label>
+                                                <div class="simple-keyboard kyebord-email"></div>
+                                                <input onclick="setKeyboards($(this), '.kyebord-email', 'azeri')" class="form-control email"  id="email" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label id="label_bk" for="exampleInputtel1">OU VOTRE NUMÉRO DE TÉLÉPHONE</label>
+                                                <label class="en_label1" id="label_bk" for="exampleInputPassword1">OR PHONE NUMBER</label>
+                                                <label id="label_en" style="display: none" for="exampleInputtel1">INSÉREZ VOTRE NUMÉRO DE TÉLÉPHONE  / <em>INSERT YOUR PHONE NUMBER</em></label>
+                                                <div class="simple-keyboard kyebord-number"></div>
+                                                <input onclick="setKeyboards($(this), '.kyebord-number', 'numbers_only')" id="exampleInputtel1" type="text" name="telephone" class="form-control telephone" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            </div>
+                                        </div>
+                                        <div class="container votes">
+                                            <div class="form-group">
+                                                <label id="label_en11"  for="exampleInputPassword1">INSÉREZ VOTRE NUMÉRO DE TÉLÉPHONE  / <em>INSERT YOUR PHONE NUMBER</em></label>
+                                                <div class="simple-keyboard kyebord-number1"></div>
+                                                <input  onclick="setKeyboards($(this), '.kyebord-number1', 'numbers_only')" id="exampleInputPassword1" type="text" name="percour-phone" class="form-control percour-phone"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <span id="messages"></span>
+
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="infosPatrique">Les données ne seront pas conservées, ni exploitées pendant ou après le salon.
+                                                <br><em> The data will neither be retained nor be exploited.</em></p>
+                                        </div>
+
+                                        <div class="row" id="btn_vote">
+                                        </div>
+                                        <div class="row">
+                                            <img class="back" onclick="onretour()" src="{{ asset('images/grille/fiches/bt_back.png' ) }}"/>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 fichedroit">
+                            <div class="block_contact">
+                                <div class="titre_produits"></div>
+                                <p class="stand_position">Stand</p>
+                                <p class="stand"></p>
+                                <p class="contact_contact">Contact</p>
+                                <p class="nom_prenom_contact"></p>
+                                <p class="tel_contact"></p>
+                                <p class="email_contact"></p>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-6 menu_document" >
+                                    <img onclick="onFicheFr()" src="{{ asset('images/grille/fiches/bt_fiche-fr.png' ) }}"/>
+                                </div>
+                                <div class="col-md-6 menu_document">
+                                    <img onclick="onFicheEn()" src="{{ asset('images/grille/fiches/bt_fiche-en.png' ) }}"/>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <img onclick="onVote()" src="{{ asset('images/grille/fiches/bt_vote.png' ) }}"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <div class="salle"></div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>

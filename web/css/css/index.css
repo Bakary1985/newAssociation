@@ -1,0 +1,129 @@
+  /*.carousel-item img{
+  	width: 81%!important;
+    margin-left: 245px;
+  }
+*/
+body{
+  font-family: 'Bookman Old Style Bold', arial;
+}
+h1{
+  font-family: 'Bookman Old Style Bold', arial;
+}
+.Adresse{
+color:#fff;
+margin-top:50px;
+border-top:1px solid #fff;
+}
+#carouselExampleIndicators{
+	    width: 78%;
+    }
+.clearfix .container .intro-text{
+	    left: 765px;
+    width: 37%;
+    margin-top: -28rem;
+    position: absolute;
+}
+#text-presentation{
+      margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+#mainNav{
+      /* background-color: rgba(47,23,15,.9); */
+    font-family: Raleway;
+    background: #a03b07;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,.7);
+    font-weight: 800;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255,255,255,.7);
+    background-color: rgba(47,23,15,.9);
+    font-weight: 800;
+}
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: rgba(255,255,255,.7);
+    background-color: rgba(47,23,15,.9);
+    font-weight: 800;
+}
+.footer {
+    background-color: #a03b07;
+}
+
+#nos-missions,
+#nos-actualites{
+    width: 358px;
+}
+.site-heading .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    width: 337px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-infos{
+  position: absolute;
+    margin-left: 71%;
+    /* background: #fff; */
+    color: #e6a756!important;
+}
+
+  @media (min-width: 992px){
+      .product-item .product-item-title {
+          position: relative;
+          z-index: 1;
+          margin-bottom: -3rem;
+      }
+      #product-item-title{
+          width: 228px;
+      }
+  }
+
+  footer .container .fr {
+      float: left;
+      color: white;
+  }
+  footer .container .sn {;
+      color: white;
+  }
+  footer .container .email {
+
+      color: white;
+  }
+@media screen and (max-width:765px), screen and (max-device-width:765px)
+{
+
+  .contact-infos {
+      display: none;
+  }
+  .cta {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+  }
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+
+    #product-item-title{
+        margin-bottom: 37px;
+    }
+    #nos-missions, #nos-actualites {
+        width: 510px;
+        margin-bottom: 30px;
+    }
+}
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

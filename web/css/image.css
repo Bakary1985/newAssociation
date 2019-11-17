@@ -1,0 +1,734 @@
+@import url("fonts.css");
+
+.batimat{
+    background: url("../images/grille/batimat/bat-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+
+.interclima{
+    background: url("../images/grille/interclima/inter-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+.ideobain{
+    background: url("../images/grille/ideobain/ideo-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+
+.batimat_top5{
+    background: url("../images/grille/batimat/bat-bt_top5.gif") no-repeat center top;
+
+    width: 240px;
+    height: 240px;
+    margin-top: -1px;
+    margin-right: 37px;
+}
+.ideobain_top5{
+    background: url("../images/grille/ideobain/ideo-bt_top5.gif") no-repeat center top;
+
+    width: 240px;
+    height: 240px;
+    margin-top: -1px;
+    margin-right: 37px;
+}
+.interclima_top5{
+    background: url("../images/grille/interclima/inter-bt_top5.gif") no-repeat center top;
+
+    width: 240px;
+    height: 240px;
+    margin-top: -1px;
+    margin-right: 37px;
+}
+.batima_menu{
+    background: url("../images/grille/card/bati-bloc.png") no-repeat center top;
+
+    width: 1060px;
+    height: 387px;
+    padding-top: 50px;
+}
+.ideo_menu{
+    background: url("../images/grille/card/ideo-bloc.png") no-repeat center top;
+
+    width: 1060px;
+    height: 244px;
+    padding-top: 50px;
+}
+.inter_menu{
+    background: url("../images/grille/card/inter-bloc.png") no-repeat center top;
+
+    width: 1060px;
+    height: 387px;
+    padding-top: 50px;
+}
+.topMap{
+    background: url("../images/grille/themes/bt_parcours.png") no-repeat center top;
+    width: 426px;
+    height: 143px;
+    background-size: contain;
+}
+.topCalendar{
+    background: url("../images/grille/themes/bt_pitch.png") no-repeat center top;
+    width: 453px;
+    height: 143px;
+    background-size: contain;
+}
+.topReturn{
+    background: url("../images/grille/themes/bt_retour.gif") no-repeat center top;
+    width: 201px;
+    height: 143px;
+    background-position: right;
+}
+.top_batimat .topReturn{
+    background: url("../images/grille/themes/bt_retour.gif") no-repeat center top;
+    width: 201px;
+    height: 145px;
+    background-position: right;
+}
+/*
+**
+*BACKGROUND PRODUIT
+*
+ */
+.batfiltre1{
+    background: url("../images/grille/themes/bat1-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre2{
+    background: url("../images/grille/themes/bat2-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre3{
+    background: url("../images/grille/themes/bat3-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre4{
+    background: url("../images/grille/themes/bat4-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre5{
+    background: url("../images/grille/themes/bat5-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre6{
+    background: url("../images/grille/themes/bat6-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre7{
+    background: url("../images/grille/themes/bat7-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre8{
+    background: url("../images/grille/themes/bat8-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+/**
+*
+* ideo
+ */
+.batfiltre9{
+    background: url("../images/grille/themes/bat9-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre10{
+    background: url("../images/grille/themes/bat10-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre11{
+    background: url("../images/grille/themes/bat11-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+/**
+*
+* inter
+ */
+
+.batfiltre12{
+    background: url("../images/grille/themes/bat12-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre13{
+    background: url("../images/grille/themes/bat13-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre14{
+    background: url("../images/grille/themes/bat14-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre15{
+    background: url("../images/grille/themes/bat15-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre16{
+    background: url("../images/grille/themes/bat16-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre17{
+    background: url("../images/grille/themes/bat17-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+.batfiltre18{
+    background: url("../images/grille/themes/bat18-fond.gif") no-repeat center top;
+    height: 1562px;
+}
+/**
+*
+*CALENDAR
+ */
+.calfiltre1{
+    background: url("../images/grille/pictchs/pitch-bat1.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre2{
+    background: url("../images/grille/pictchs/pitch-bat2.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre3{
+    background: url("../images/grille/pictchs/pitch-bat3.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre4{
+    background: url("../images/grille/pictchs/pitch-bat4.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre5{
+    background: url("../images/grille/pictchs/pitch-bat5.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre6{
+    background: url("../images/grille/pictchs/pitch-bat6.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre7{
+    background: url("../images/grille/pictchs/pitch-bat7.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre8{
+    background: url("../images/grille/pictchs/pitch-bat8.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre9{
+    background: url("../images/grille/pictchs/pitch-bat9.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre10{
+    background: url("../images/grille/pictchs/pitch-bat10.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre11{
+    background: url("../images/grille/pictchs/pitch-bat11.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre12{
+    background: url("../images/grille/pictchs/pitch-bat12.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre13{
+    background: url("../images/grille/pictchs/pitch-bat13.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre14{
+    background: url("../images/grille/pictchs/pitch-bat14.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre15{
+    background: url("../images/grille/pictchs/pitch-bat15.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre16{
+    background: url("../images/grille/pictchs/pitch-bat16.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre17{
+    background: url("../images/grille/pictchs/pitch-bat17.gif") no-repeat center top;
+    height: 1920px;
+}
+.calfiltre18{
+    background: url("../images/grille/pictchs/pitch-bat18.gif") no-repeat center top;
+    height: 1920px;
+}
+/**
+*
+*MAP
+ */
+.mapfiltre1{
+    background: url("../images/grille/parcours/parcours-bat1.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre2{
+    background: url("../images/grille/parcours/parcours-bat2.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre3{
+    background: url("../images/grille/parcours/parcours-bat3.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre4{
+    background: url("../images/grille/parcours/parcours-bat4.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre5{
+    background: url("../images/grille/parcours/parcours-bat5.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre6{
+    background: url("../images/grille/parcours/parcours-bat6.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre7{
+    background: url("../images/grille/parcours/parcours-bat7.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre8{
+    background: url("../images/grille/parcours/parcours-bat8.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre9{
+    background: url("../images/grille/parcours/parcours-bat9.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre10{
+    background: url("../images/grille/parcours/parcours-bat10.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre11{
+    background: url("../images/grille/parcours/parcours-bat11.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre12{
+    background: url("../images/grille/parcours/parcours-bat12.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre13{
+    background: url("../images/grille/parcours/parcours-bat13.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre14{
+    background: url("../images/grille/parcours/parcours-bat14.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre15{
+    background: url("../images/grille/parcours/parcours-bat15.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre16{
+    background: url("../images/grille/parcours/parcours-bat16.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre17{
+    background: url("../images/grille/parcours/parcours-bat17.gif") no-repeat center top;
+    height: 1920px;
+}
+.mapfiltre18{
+    background: url("../images/grille/parcours/parcours-bat18.gif") no-repeat center top;
+    height: 1920px;
+}
+/**
+*LOREAT
+ */
+.loreat1{
+    background: url("../images/grille/fiches/bat1-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat2{
+    background: url("../images/grille/fiches/bat2-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat3{
+    background: url("../images/grille/fiches/bat3-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat4{
+    background: url("../images/grille/fiches/bat4-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat5{
+    background: url("../images/grille/fiches/bat5-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat6{
+    background: url("../images/grille/fiches/bat6-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat7{
+    background: url("../images/grille/fiches/bat7-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat8{
+    background: url("../images/grille/fiches/bat8-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat9{
+    background: url("../images/grille/fiches/bat9-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat10{
+    background: url("../images/grille/fiches/bat10-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat11{
+    background: url("../images/grille/fiches/bat11-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat12{
+    background: url("../images/grille/fiches/bat12-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat13{
+    background: url("../images/grille/fiches/bat13-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat14{
+    background: url("../images/grille/fiches/bat14-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat15{
+    background: url("../images/grille/fiches/bat15-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat16{
+    background: url("../images/grille/fiches/bat16-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat17{
+    background: url("../images/grille/fiches/bat17-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+.loreat18{
+    background: url("../images/grille/fiches/bat18-pitch.gif") no-repeat center top;
+    width: 1017px;
+    height: 150px;
+}
+
+.top_batimat{
+    background: url("../images/grille/top5/bat-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+.top_ideobain{
+    background: url("../images/grille/top5/ideo-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+.top_interclima{
+    background: url("../images/grille/top5/inter-fond.gif") no-repeat center top;
+    height: 1920px;
+}
+.num_0{
+    background: url("../images/grille/top5/num1.png") no-repeat center top;
+    height: 50px;
+}
+.num_1{
+    background: url("../images/grille/top5/num2.png") no-repeat center top;
+    height: 50px;
+}
+.num_2{
+    background: url("../images/grille/top5/num3.png") no-repeat center top;
+    height: 50px;
+}
+.num_3{
+    background: url("../images/grille/top5/num4.png") no-repeat center top;
+    height: 50px;
+}
+.num_4{
+    background: url("../images/grille/top5/num5.png") no-repeat center top;
+    height: 50px;
+}
+.bat1_plan1{
+    background: url("../images/grille/plans/bat1_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat1_plan2{
+    background: url("../images/grille/plans/bat1_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat1_plan3{
+    background: url("../images/grille/plans/bat1_plan3.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat2_plan1{
+    background: url("../images/grille/plans/bat2_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat2_plan2{
+    background: url("../images/grille/plans/bat2_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat3_plan1{
+    background: url("../images/grille/plans/bat3_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat3_plan2{
+    background: url("../images/grille/plans/bat3_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat4_plan1{
+    background: url("../images/grille/plans/bat4_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat5_plan1{
+    background: url("../images/grille/plans/bat5_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat5_plan2{
+    background: url("../images/grille/plans/bat5_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat6_plan1{
+    background: url("../images/grille/plans/bat6_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat6_plan2{
+     background: url("../images/grille/plans/bat6_plan2.gif") no-repeat center top;
+     width: 1080px;
+     height: 1234px;
+ }
+/*slid-7*/
+.bat7_plan1{
+    background: url("../images/grille/plans/bat7_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat7_plan2{
+    background: url("../images/grille/plans/bat7_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat7_plan3{
+    background: url("../images/grille/plans/bat7_plan3.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+/*slid-8*/
+.bat8_plan1{
+    background: url("../images/grille/plans/bat8_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat8_plan2{
+    background: url("../images/grille/plans/bat8_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat9_plan1{
+    background: url("../images/grille/plans/bat9_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat10_plan1{
+    background: url("../images/grille/plans/bat10_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat11_plan1{
+    background: url("../images/grille/plans/bat11_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat12_plan1{
+    background: url("../images/grille/plans/bat12_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat12_plan2{
+    background: url("../images/grille/plans/bat12_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat13_plan1{
+    background: url("../images/grille/plans/bat13_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat13_plan2{
+    background: url("../images/grille/plans/bat13_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat14_plan1{
+    background: url("../images/grille/plans/bat14_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat15_plan1{
+    background: url("../images/grille/plans/bat15_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat15_plan2{
+     background: url("../images/grille/plans/bat15_plan2.gif") no-repeat center top;
+     width: 1080px;
+     height: 1234px;
+ }
+.bat16_plan1{
+    background: url("../images/grille/plans/bat16_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat16_plan2{
+    background: url("../images/grille/plans/bat16_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat17_plan1{
+    background: url("../images/grille/plans/bat17_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat17_plan2{
+    background: url("../images/grille/plans/bat17_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat18_plan1{
+    background: url("../images/grille/plans/bat18_plan1.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.bat18_plan2{
+    background: url("../images/grille/plans/bat18_plan2.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+
+.video1{
+    background: url("../images/animations/video1.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video1{
+    background: url("../images/animations/video1.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video2{
+    background: url("../images/animations/video2.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video3{
+    background: url("../images/animations/video3.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video4{
+    background: url("../images/animations/video4.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.video5{
+    background: url("../images/animations/video5.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video6{
+    background: url("../images/animations/video6.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video7{
+    background: url("../images/animations/video7.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video8{
+    background: url("../images/animations/video8.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video9{
+    background: url("../images/animations/video9.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.video10{
+    background: url("../images/animations/video10.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video11{
+    background: url("../images/animations/video11.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video12{
+    background: url("../images/animations/video12.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video13{
+    background: url("../images/animations/video13.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.video14{
+    background: url("../images/animations/video14.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.video15{
+    background: url("../images/animations/video15.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video16{
+    background: url("../images/animations/video16.gif") no-repeat center top;
+    width: 1080px;
+    height: 1234px;
+}
+.video17{
+    background: url("../images/animations/video17.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+.video18{
+    background: url("../images/animations/video18.gif") no-repeat center top;
+    width: 1080px;
+    height: 357px;
+}
+#resultatTop5{
+    background: url("../images/animations/fond-drt.png") no-repeat center top;
+    width: 1920px;
+    height: 1080px;
+}
+#logobatimat{
+    width: 1920px;
+    height: 1080px;
+}
+.returnFilter{
+    background: url("../images/grille/themes/bt_retour.gif") no-repeat center top;
+    width: 201px;
+    height: 143px;
+    background-position: right;
+}
+.returnFilterCalendar{
+    background: url("../images/grille/themes/bt_retour.gif") no-repeat center top;
+    width: 201px;
+    height: 143px;
+    background-position: right;
+    margin-left: 723px;
+}

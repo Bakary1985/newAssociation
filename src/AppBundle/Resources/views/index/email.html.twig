@@ -1,0 +1,7 @@
+{% extends 'basetop.html.twig' %}
+{% block body %}
+    <p><span>Fiche Produit/Product Sheet : {{ name }}</span></p>
+
+    lien: <a target="_blank" href="http://{{ lien|replace({'http://': ''}) }}">{{ lien }}</a>
+    <p>Merci/Thank you</p>
+{% endblock %}

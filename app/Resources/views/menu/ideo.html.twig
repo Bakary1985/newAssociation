@@ -1,0 +1,20 @@
+
+    <div class="row ideo_menu menusalon">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        {% for i in 9..11 %}
+                            <div class="col-md-3">
+                                <a onclick="setFilter('filtre{{ i }}')" class="control color1"
+                                   data-type=".typeClass{{ i }}" style="background: transparent;"><img
+                                            style="margin-top: 10px;"
+                                            src="/web/images/grille/ideobain/{{ i }}.gif" alt="" data-log="true"
+                                            data-log-value="FILTER::Solutions de menuiseries et vitrages pour allier performance et design"/></a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

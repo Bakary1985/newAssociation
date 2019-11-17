@@ -1,0 +1,857 @@
+@import url("../build/fonts.css");
+
+body {
+
+}
+
+html, body, .noselect {
+    -ms-content-zooming: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
+}
+
+#stand_exhibitors {
+    height: 500px;
+}
+
+.leaflet-container {
+    background-color: rgba(255, 0, 0, 0.0);
+}
+
+#mapid {
+    background-color: transparent !important;
+}
+
+.titleStand {
+    /*margin-top:40px;*/
+    text-align: center;
+    color: #e13235;
+    font-size: 26px;
+}
+
+.detaildata {
+    color: #000000;
+    font-size: 20px;
+    max-height: 320px;
+    overflow: auto;
+    margin-bottom: 34px;
+}
+
+.detaildata li {
+    float: left;
+}
+
+.popupContent {
+    width: 460px;
+    margin:inherit;
+}
+
+.leaflet-popup-content {
+    /*width: 388px !important;*/
+}
+
+.leaflet-popup-content-wrapper {
+
+}
+
+.leaflet-popup-content-wrapper {
+    position: relative;
+    border: 8px solid #eb5234;
+    border-radius: 0px;
+    width: 550px;
+    /* height: 410px;*/
+    overflow: auto;
+}
+/*
+.planParcours .leaflet-popup-content-wrapper {
+    position: relative;
+    border: 4px solid #eb5234;
+    border-radius: 0px;
+    width: 550px;
+    height: 410px;
+    overflow: auto;
+}
+*/
+.leaflet-container a.leaflet-popup-close-button {
+    right: 41%;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    padding: 39px;
+    font-size: 0px;
+    margin-top: 5px;
+    margin-right: -21px;
+
+
+}
+
+
+
+.search {
+    width: 799px;
+    position: absolute;
+    top: 1220px;
+    left: 1405px;
+    color: #000;
+    z-index: 1000;
+}
+
+#autocomplete {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e9ecef;
+    color: #000;
+    font-size: 35px;
+    height: 79px;
+    padding-left: 20px;
+    width: 776px;
+    margin-top: -16px;
+}
+
+.leaflet-popup {
+    bottom: 0px !important;
+}
+
+.leaflet-bottom {
+    display: none;
+}
+
+.planV4 .leaflet-top {
+    top: 0;
+    display: none;
+}
+
+.planV4 .search {
+    width: 799px;
+    position: absolute;
+    top: 659px;
+    left: 106px;
+    color: #000;
+    z-index: 1000;
+}
+
+.planV4 #autocomplete {
+    background: #fff none repeat scroll 0 0;
+    border: 0px solid #f8a519;
+    color: #000;
+    font-size: 35px;
+    height: 79px;
+    padding-left: 20px;
+    width: 776px;
+    margin-top: -16px;
+}
+
+
+
+.planV4 .detaildata {
+    color: #0b4271;
+    font-size: 24pt;
+    min-height: 54px;
+    max-height: 320px;
+    overflow: auto;
+}
+
+.planV4 .detaildata li {
+    float: left;
+}
+
+.planV4 #stand_exhibitors {
+    height: 500px;
+}
+
+.planV4 #videoStrem {
+    width: 485px;
+    height: 273px;
+    position: absolute;
+    top: 1675px;
+    left: 1744px;
+    color: #000;
+    z-index: 1000;
+
+}
+
+.totem .search {
+    width: 790px;
+    position: absolute;
+    top: 1015px;
+    left: 190px;
+    color: #000;
+    z-index: 10000;
+}
+
+.totem #autocomplete {
+    background: #fff none repeat scroll 0 0;
+    border: 0px solid black;
+    color: #000;
+    font-size: 35px;
+    height: 79px;
+    padding-left: 20px;
+    width: 776px;
+    margin-top: -16px;
+}
+
+.totem .titleStand {
+    padding: 20px;
+    text-align: center;
+    color: #359cca;
+    font-size: 36px;
+    border-bottom: 2px solid #359cca;
+}
+
+.totem .detaildata {
+    padding: 20px;
+    color: #0b4372;
+    font-size: 22px;
+    max-height: 320px;
+    overflow: auto;
+}
+
+.totem .detaildata li {
+    float: left;
+}
+
+.totem #stand_exhibitors {
+    height: 500px;
+}
+
+.totem .leaflet-top {
+    top: 0;
+    display: none;
+}
+
+.totem .leaflet-popup-content-wrapper {
+    position: relative;
+    border: 4px solid #eb5234;
+    border-radius: 0px;
+    width: 327px;
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 35px;
+}
+
+.totem .leaflet-container a.leaflet-popup-close-button {
+    right: 50%;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: -19px;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+}
+
+totem .popupContent {
+    width: 554px;
+    padding-top: 60px;
+}
+
+.totem #popupContent {
+    width: 287px;
+    padding-top: 0px;
+}
+
+.totem .titleStand {
+    padding: 0px;
+    text-align: center;
+    color: #359cca;
+    font-size: 25px;
+    border-bottom: 2px solid #359cca;
+}
+
+.totem .titleStand {
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: #359cca;
+    font-size: 14px;
+    border-bottom: 2px solid #359cca;
+    width: 240px;
+}
+
+.totem .detaildata {
+    padding: 0px;
+    color: #0b4372;
+    font-size: 12px;
+    max-height: 74px;
+    overflow: auto;
+}
+
+.totem .backUrlBox {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+
+}
+
+.planV3 .modal-dialog {
+    max-width: 2250px !important;
+    margin-top: 40px !important;
+    margin: 0 auto;
+}
+
+.planV3 .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.planV3 .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 !important;
+}
+
+
+.planV4 .modal-dialog {
+    max-width: 2250px !important;
+    margin-top: 40px !important;
+    margin: 0 auto;
+}
+
+.planV4 .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.planV4 .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 !important;
+}
+
+#zone {
+    left: 143px;
+    position: absolute;
+    width: 780px;
+}
+
+#zoneTitle {
+    left: 580px;
+    top: 1230px;
+    position: absolute;
+    width: 1083px;
+}
+
+#zone li {
+    height: 117px;
+    float: left;
+    padding: 20px;
+    list-style-type: none;
+    padding-left: 10px;
+    width: 48%;
+}
+
+#palmares {
+    left: 490px;
+    top: 1300px;
+    position: absolute;
+    width: 400px;
+}
+
+
+#palmares li {
+    float: left;
+    padding: 20px;
+    list-style-type: none;
+    padding-left: 10px;
+    width: 48%;
+}
+
+/*.totem	.detaildata {
+    padding: 0px;
+    color: #0b4372;
+    font-size: 22px;
+    max-height: 127px;
+    overflow: auto;
+}*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi93ZWIvYXNzZXRzL2Nzcy9hcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVCQUF1Qjs7QUFFdkIiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGFzc2V0cy9jc3MvYXBwLmNzcyovXHJcblxyXG5ib2R5IHtcclxuXHJcbn1cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi93ZWIvYXNzZXRzL2Nzcy9hcHAuY3NzIl0sInNvdXJjZVJvb3QiOiIifQ==*/
+
+#tour_block {
+    left: 2050px;
+    top: 1744px;
+    position: absolute;
+    width: 300px;
+    height: 366px;
+}
+
+#tour_start {
+    background-image: url(../images/bt_commencer.gif);
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+}
+
+#tour_end {
+    display: none;
+    background-image: url(../images/bt_valider.gif);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+#tourValidationPopup {
+
+    position: absolute;
+    width: 3840px;
+    height: 2160px;
+    display: none;
+    z-index: 50000000;
+}
+
+#tourValidationPopupBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    z-index: 50000001;
+}
+
+#tourValidationPopupForm {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: #fff;
+
+    z-index: 50000002;
+}
+
+#innovationsSel {
+    background-image: url(../images/recherche.png);
+    background-repeat: no-repeat;
+    /* padding-left: 2px; */
+    background-position: 98%;
+}
+
+.planV4 .titleStand {
+    font-family: "Museo Sans 900";
+    text-align: center;
+    font-weight: bold;
+    color: #e83a45;
+    font-size: 17px;
+    width: 96%;
+}
+
+.popupContent .detaildata table {
+    color: #000000;
+    font-family: 'Museo Sans 900';
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    width: 92%;
+    position: absolute;
+    top: 41px;
+}
+
+.popupContent .detaildata .popup_exposant {
+    /*border-bottom: 2px solid #107fc4;*/
+}
+
+#innovationsSel {
+    width: 645px;
+    height: 70px;
+    font-size: 26px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#ListExhibitors-box {
+    display: block;
+    position: absolute;
+    top: 1107px;
+    z-index: 1000;
+    width: 912px;
+    left: 92px;
+    height: 400px;
+    overflow-x: hidden;
+    padding: 5px;
+    /* overflow-y: auto;*/
+    font-family: 'Museo Sans 900';
+}
+
+#ListExhibitors-modal {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 912px;
+    left: 92px;
+    height: 400px;
+    overflow-x: hidden;
+    padding: 5px;
+    /* overflow-y: auto;*/
+    font-family: 'Museo Sans 900';
+}
+
+#ListExhibitors-box .stand_name {
+    color: #000;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 26px;
+    width: 80%;
+    float: left;
+    font-family: 'Museo Sans 700';
+}
+
+#ListExhibitors-box .stand_label {
+    color: #e3076a;
+    padding-left: 10px;
+    font-size: 26px;
+    width: 19%;
+    float: left;
+    font-family: 'Museo Sans 700';
+    /*text-align: center;*/
+}
+
+.popupContent .detaildata table:last-child {
+    color: #000;
+    font-size: 21px;
+    font-family: 'Museo Sans 700';
+    text-align: left;
+
+}
+
+#animation {
+    left: 50px;
+    top: 1583px;
+    position: absolute;
+}
+
+.tourTitle {
+    color: #000;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 20px 110px 20px;
+    border-bottom: 5px solid;
+}
+
+
+#autocomplete1 {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #107fc3;
+    color: #000;
+    font-size: 35px;
+    width: 90%;
+    padding: 0px 50px;
+
+}
+
+.tourForm span {
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.tourForm .searchbox {
+    padding: 0px 150px;
+}
+
+.btnTourForm {
+    color: #fff;
+    bottom: 220px;
+    cursor: pointer;
+    margin: 50px 350px;
+    padding: 15px 11px 11px 1px;
+    width: 36%;
+    background: #107fc3;
+    border: none;
+    font-family: 'Museo Sans 700';
+    font-size: 50px;
+
+}
+
+
+.planParcours .leaflet-popup-content-wrapper {
+    position: relative;
+    border: 1px solid #eb5234;
+    border-radius: 0px;
+    min-width: 104px;
+    max-width: 59px;
+    min-height: 52px;
+    overflow: hidden;
+}
+
+.planParcoursPopUp {
+    background-color: #ffffff;
+    position: relative;
+    border: 1px solid #eb5234;
+    border-radius: 0px;
+    min-width: 136px;
+    max-width: 59px;
+    min-height: 52px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -246px;
+}
+.planParcoursPopUp_message {
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #eb5234;
+    border-radius: 0px;
+    min-width: 136px;
+    max-width: 59px;
+    min-height: 280px;
+    /* overflow: hidden; */
+    /* position: relative; */
+    margin-left: -166px;
+    margin-top: -99px;
+}
+.planPar{
+
+}
+.planParcours .popupContent {
+    width: 64px;
+    padding-top: 0px;
+}
+
+.planParcours .titleStand {
+    margin-top: 0px;
+    text-align: center;
+    color: #107fc4;
+    font-size: 11px !important;
+    border-bottom: 1px solid #cccccc;
+}
+
+.planParcours .popupContent .title{
+    color: #e40e65;
+}
+.planParcours .popupContent .detaildata table {
+    color: #0b4271;
+    font-size: 7px !important;
+    font-family: 'Museo Sans 700';
+    margin-left: 0px;
+}
+
+.planParcours .popupContent .detaildata table:last-child {
+    color: #000;
+    font-size: 8px;
+    font-family: 'Museo Sans 700';
+    margin-left: 0px;
+
+}
+
+.planParcours .leaflet-popup-close-button {
+    font-size: 0px !important;
+    display: none;
+}
+
+.description {
+    font-size: 13px !important;
+    font-family: "Museo Sans 700";
+    color: #6e6e6e;
+    height: 170px;
+}
+
+.descriptionLabs {
+    font-size: 17px !important;
+    font-family: 'Museo Sans 700 ';
+    color: #6e6e6e;
+    border-bottom: 2px solid #b9b8bf;
+    height: 120px;
+}
+.planParcours .leaflet-popup {
+    bottom: 0px !important;
+}
+
+.planParcours .leaflet-popup-content {
+    margin: 2px;
+    padding: 0px;
+}
+
+#resetPopup {
+    position: absolute;
+    top: 80px;
+    left: 1700px;
+}
+
+.carousel {
+    position: absolute;
+    bottom: -31px;
+    left: 1097px;
+    width: 1789px;
+}
+
+.leaflet-popup  .leaflet-zoom-animated{
+    height: 304px;
+}
+
+.TITLESTAND{
+    margin-top: 0px;
+    text-align: center;
+    color: #107fc4;
+    font-size: 25px !important;
+    border-bottom: 1px solid #cccccc;
+}
+/*
+couleur click exhibotor
+ */
+div:focus {
+    background-color:#b9b8bf;
+}
+
+/*
+couleur filtre par lettre
+ */
+a:focus {
+    color: #000;
+    border: 0px;
+}
+
+.legende{
+    position: absolute;
+    left: 1294px;
+    top: 213px;
+    /*z-index: 1000;*/
+    width: 43%;
+}
+
+.yourPosition1{
+    position: absolute;
+    left: 1389px;
+    top: 1416px;
+    z-index: 1000;
+    width: 7%;
+}
+.yourPosition2{
+    position: absolute;
+    left: 2967px;
+    top: 1420px;
+    z-index: 1000;
+    width: 7%;
+}
+.logoPlan{
+    position: absolute;
+    left: 2045px;
+    top: 81px;
+    /* z-index: 1000;*/
+}
+
+.leaflet-popup-content {
+    margin: 10px 15px;
+    line-height: 1;
+}
+
+.visibiliteLive{
+    visibility: hidden;
+}
+
+#ListExhibitors-box ul li{
+    display: inline-block;
+    background: #f08a0b;
+    color: #fff;
+    padding: 2px 6px;
+    margin: 1px;
+}
+
+#ListExhibitors-box ul li:active{
+    display: inline-block;
+    background: #e40869;
+    color: #fff;
+    padding: 2px 6px;
+    margin: 1px;
+}
+
+.exhibitorItem.hide {
+    display: none !important;
+}
+.sms .leaflet-control-search .search-button {
+    display: none;
+}
+.sms .leaflet-left{
+    display: none;
+}
+.sms .leaflet-popup-close-button{
+    display: none;
+}
+.sms .leaflet-popup-content-wrapper {
+    position: relative;
+    border: 1px solid #eb5234;
+    border-radius: 0px;
+    width: 150px;
+    /* height: 410px; */
+    overflow: hidden;
+}
+.sms .popupContent {
+    width: 100%;
+    margin: inherit;
+}
+.sms .titleStand {
+    /* margin-top: 40px; */
+    /* text-align: center; */
+    color: #e13235;
+    font-size: 12px;
+    width: 100%;
+}
+.sms .popupContent .detaildata table {
+    color: #000000;
+    font-family: 'Museo Sans 900';
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+    position: absolute;
+    /* top: 41px; */
+}
+.sms .leaflet-popup-content {
+    margin: 0;
+    line-height: 3.4;
+}
+#example_wrapper > .row:first-child{
+    width: 100%;
+    /*background: #ccc;*/
+    margin-bottom: 30px;
+}
+
+#example > #theadTable{
+    border: 1px solid #c0c0c0;
+}
+nav .btn-outline-dark{
+    color: #000000;
+}
+
+/*
+table.dataTable {
+    border-collapse: collapse;
+}
+#example>thead>tr,#example>tbody>tr{
+    border: 2px solid #000000;
+}
+#example>thead>tr>th,#example>tbody>tr>td{
+    border: 2px solid #000000;
+}
+.odd{
+    background:#ccc;
+}*/
+
+.lienfr{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.lienen{
+    margin-bottom: 5px;
+    font-weight: 700;
+}

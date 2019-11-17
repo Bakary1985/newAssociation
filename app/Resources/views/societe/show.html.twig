@@ -1,0 +1,75 @@
+{% extends 'baseAdmins.html.twig' %}
+{% block body %}
+    <h1>Societe</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ societe.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ societe.nom }}</td>
+            </tr>
+            <tr>
+                <th>Stand</th>
+                <td>{{ societe.stand }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ societe.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Rue</th>
+                <td>{{ societe.rue }}</td>
+            </tr>
+            <tr>
+                <th>Code_postal</th>
+                <td>{{ societe.codepostal }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ societe.ville }}</td>
+            </tr>
+            <tr>
+                <th>Pays</th>
+                <td>{{ societe.pays }}</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>{{ societe.tel }}</td>
+            </tr>
+            <tr>
+                <th>Personne_contact</th>
+                <td>{{ societe.personnecontact }}</td>
+            </tr>
+            <tr>
+                <th>Contact_email</th>
+                <td>{{ societe.contactemail }}</td>
+            </tr>
+            <tr>
+                <th>Site</th>
+                <td>{{ societe.site }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ societe.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('societe_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('societe_edit', { 'id': societe.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

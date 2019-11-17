@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Museo Sans 900';
+    src: url('fonts/MuseoSans-900.eot');
+    src: url('fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans-900.woff2') format('woff2'),
+         url('fonts/MuseoSans-900.woff') format('woff'),
+         url('fonts/MuseoSans-900.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans 500';
+    src: url('fonts/MuseoSans-500.eot');
+    src: url('fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans-500.woff2') format('woff2'),
+         url('fonts/MuseoSans-500.woff') format('woff'),
+         url('fonts/MuseoSans-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans 700';
+    src: url('fonts/MuseoSans-700.eot');
+    src: url('fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans-700.woff2') format('woff2'),
+         url('fonts/MuseoSans-700.woff') format('woff'),
+         url('fonts/MuseoSans-700.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.bliwe-main {
+	font-family: 'Museo Sans 500';
+}
+.bliwe-main.totem-main{
+	background-color: #ccc; 
+    background-image: url(/images/totem-a/fond_plan-totem.png);
+    width:1080px;height:1920px;      
+    background-repeat: no-repeat;
+}
+.bliwe-totem-menu{
+	position: absolute;
+    right: 20px;
+    top: 200px;
+    width: 138px;
+    z-index: 1000;
+}
+.bliwe-totem-menu ul > li{
+	margin-bottom: 15px;
+}
+.bliwe-totem-menu ul > li a{
+	display: block;
+    width: 138px;
+    cursor: pointer;
+}
+.bliwe-totem-menu ul > li.btn-salle-map{
+	margin-top: -140px;
+	display:none;
+}
+.bliwe-totem-menu ul > li.btn-salle-map.active{
+	display:block;
+}
+.bliwe-container-conf{
+	margin-top:60px;
+}
+.bliwe-detail-conf{
+	min-height: 240px;
+    margin-bottom: 30px;
+}
+.bliwe-detail-conf .bliwe-date,
+.bliwe-detail-conf .bliwe-title,
+.bliwe-detail-conf .bliwe-salle{
+	color:#fff;
+	font-family: 'Museo Sans 700';
+}
+.bliwe-detail-conf .bliwe-date{
+	padding: 24px 0 0 0;
+}
+.bliwe-detail-conf .bliwe-title{
+	font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-height: 130px;
+    display: block;
+}
+.bliwe-detail-conf .bliwe-salle{
+	text-transform:uppercase;
+	font-family: 'Museo Sans 500';
+	letter-spacing: 2px;
+}
+
+.bliwe-conf-state{
+	font-family: 'Museo Sans 900';
+	font-size: 3.2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 21px;	
+}
+
+
+.bliwe-map-menu{
+	margin-right: 40px;
+}
+.bliwe-map-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.bliwe-map-menu li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+/*TOTEM MODAL*/
+.totem-modal{
+	display: none;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 1050;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 15px 30px;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    background-color: #ccc; 
+	background-image: url(/images/totem-a/fond_plan-list2.png);
+	width:1080px;
+	height:1920px;      
+	background-repeat: no-repeat;
+}
+.totem-modal .modal-dialog{
+	max-width:100% !important;
+}
+.totem-modal .modal-body,
+.totem-modal .modal-content{
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
+.totem-modal .modal-content{
+	padding: 0 30px;
+}
+.totem-modal .modal-header {
+	border-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 9px;
+}
+.totem-modal .modal-header .modal-title {
+    font-size: 4em;
+    color:#fff;
+	font-family: 'Museo Sans 700';
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+.totem-modal .modal-header .close {
+    background: #000;
+    color: #fff;
+    opacity: 1 !important;
+    margin: -50px -48px 0 0;
+}
+.totem-modal .modal-body{
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
+.totem-modal .totem-exhibitors{
+	position:relative;
+	top:270px;
+}
+.totem-modal .totem-exhibitors-search{
+	text-align:center
+}
+.totem-modal .totem-exhibitors-search input{
+	border: 2px solid red !important;
+    font-size: 28px !important;
+}
+.totem-modal .totem-exhibitors-list-box {
+	height: 980px;
+    margin-top: 50px;
+    overflow: scroll;
+}
+.totem-modal .exhibitor-list .stand_label,
+.totem-modal .exhibitor-list .stand_name{
+	display:inline-block;
+    font-size: 26px;
+    width: 420px;
+}
+.totem-modal .exhibitor-list .stand_label{
+	color: red;
+    width: 130px;
+}
+
+.totem-modal .exhibitorItem.hide{
+	display:none !important;
+}
+.totem-modal .exhibitorItem.show{
+	display:block !important;
+}
+.totem-modal .exhibitor-list-menu{
+	list-style-type: none;
+	display: inline-block;
+}
+.totem-modal .exhibitor-list-menu li{
+	display:inline-block;
+	background: #f08a0b;
+    color: #fff;
+    padding: 2px 6px;
+}
+.totem-modal .exhibitor-list-menu li.btn-percour{
+	background: #e3066b;
+}
+
+.totem-modal .modal-footer {
+    border-top: 0;
+}
+.totem-modal .bliwe-totem-menu{
+	top: 20px;
+    right: -40px;
+}
+
+.simple-keyboard {
+    position: absolute;
+    background: #333;
+    left: 85px;
+    width: 773px;
+    top: -331px;
+}
+
+/* FILTER */
+.bliwe-totem-filter{
+	margin: 0 auto;
+    width: 630px;
+}
+.bliwe-totem-filter .btn-img{
+	margin-bottom:8px;
+	margin-left:8px;
+}
+.bliwe-totem-filter .btn-img.active{
+	opacity:0.5;
+}
+.bliwe-totem-filter .title{
+	margin-bottom:15px;
+	color:#fff;
+}
+.totem-exhibitors-search-alfa{
+	text-align: center;
+	margin:15px 0;
+}
+.totem-exhibitors-search-alfa ul{
+	list-style: none;
+    margin: 0;
+    padding: 0
+}
+.totem-exhibitors-search-alfa ul li {
+	display: inline-block;
+    background: #f08a0b;
+    color: #fff;
+    padding: 2px 6px;
+    margin: 1px;
+}
+.totem-exhibitors-search-alfa ul li.active {
+    background: #e40869;
+}
+.exhibitors-search-no-result{
+	background: #e3046c;
+    margin: 0 auto;
+    padding: 5px 10px;
+    color: #fff;
+    width: 869px;
+    display: none;
+}
+.exhibitors-search-loader{
+	text-align: center;
+    margin: 0 0 15px;
+    height:30px;
+}
+.exhibitors-search-loader img{
+	display:none;
+}
+.bliwe-totem-create-panel{
+	background: #333;
+    width: 100%;
+    height: 240px;
+    border: 6px solid #fff;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    color:#fff;
+    padding:20px;
+    overflow-x: auto;
+}
+.bliwe-totem-create-panel.active{
+    display: block;
+}
+.bliwe-totem-percour-infos{
+	display: none;
+	height: 100%;
+	margin-left: 50px;
+}
+.bliwe-totem-percour-infos.active{
+	display: block;
+}
+.bliwe-totem-percour-list{
+	list-style-type: decimal;
+    width: 100%;
+}
+.bliwe-totem-percour-list li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+.bliwe-totem-percour-list li .percour-item-infos{
+    display: inline-block;
+    width: 700px;
+}
+.bliwe-totem-percour-list li .percour-item-action{
+	display: inline-block;
+    margin: 0 15px;
+}
+.bliwe-totem-percour-list li .percour-item-action a{
+	display: block;
+    background: #6c757d;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 0.7em;
+}
+.bliwe-totem-percour-form{
+	position: fixed;
+    width: 839px;
+    background: #ffffff;
+    margin: 50px;
+    height: 160px;
+    display: none;
+    padding: 20px 20px;
+    margin-left: 18px;
+    margin-top: 25px;
+    border: 6px solid #e3066b;
+}
+.bliwe-totem-percour-form .bliwe-btn-close{
+    border-color: #e3066b;
+    background: #e3076a;
+}
+
+.bliwe-totem-percour-form form{
+	padding: 10px 0;
+}
+.bliwe-totem-percour-form.active{
+	display:block;
+}
+.bliwe-totem-percour-form input{
+    width: 400px;
+}
+.bliwe-totem-percour-form .btn-primary,
+.bliwe-totem-percour-form .btn-primary:hover{
+	color: #fff;
+    background-color: #e3066b;
+    border-color: #e3056b;
+}
+.bliwe-totem-percour-form select.percour-phone-prefix{
+	max-height:200px;	
+}
+
+/*MAP TOTEM POPUP*/
+.totem-popup-detail{
+	margin-top: 25px;
+    margin-bottom: 25px;
+}
+.stand-detail-data .exposant-title,
+.stand-detail-data .stand-title{
+    font-family: 'Museo Sans 900';
+    color: #3da2db;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 2px solid #3da2db;
+    padding: 8px 0;
+    margin: 0 0 8px;
+}
+.stand-detail-data .stand-exposant-item{
+	font-family: 'Museo Sans 700';
+    text-align: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.totem-popup-detail .stand-title{
+	font-family: 'Museo Sans 700';
+    color: #3da2db;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 0 8px;
+}
+.totem-popup-detail .stand-description{}
+.totem-popup-detail .stand-secteur{
+	margin: 8px 0;
+    text-align: center;
+    color: #e40e65;
+}
+.bliwe-btn-close{
+	position: fixed;
+    background: black;
+    width: 45px;
+    margin: -45px -45px 0;
+    padding: 0;
+    height: 45px;
+    text-align: center;
+    border: 4px solid #fff;
+    border-radius: 45px;
+    line-height: 2.2;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: bold;
+}

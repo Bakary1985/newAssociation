@@ -1,0 +1,20 @@
+
+    <div class="row inter_menu menusalon">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        {% for i in 12..18 %}
+                            <div class="col-md-3">
+                                <a onclick="setFilter('filtre{{ i }}')" class="control color1"
+                                   data-type=".typeClass{{ i }}" style="background: transparent;"><img
+                                            style="margin-top: 10px;"
+                                            src="/web/images/grille/interclima/{{ i }}.gif" alt="" data-log="true"
+                                            data-log-value="FILTER::Solutions de menuiseries et vitrages pour allier performance et design"/></a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
